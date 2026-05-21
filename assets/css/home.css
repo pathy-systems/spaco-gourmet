@@ -31,7 +31,7 @@ body {
 }
 
 /* NAV */
-nav {
+#nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@ nav {
     border-bottom: 1px solid transparent;
 }
 
-nav.scrolled {
+#nav.scrolled {
     background: rgba(10, 10, 10, 0.92);
     backdrop-filter: blur(20px);
     border-color: rgba(200, 196, 188, 0.12);
@@ -870,7 +870,7 @@ footer {
 }
 
 @media(max-width:900px) {
-    nav {
+    #nav {
         padding: 1rem 1.5rem;
     }
 
