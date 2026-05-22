@@ -5,31 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ═══ SEO PRIMÁRIO ═══ -->
-  <title>Spaço Gourmet Restaurante | Vila Yara</title>
+  <title>Spaço Gourmet Restaurante | Vila Yara, Osasco</title>
   <meta name="description" content="Restaurante por quilo em Osasco, SP. Buffet completo com saladas, massas, carnes e acompanhamentos frescos todo dia. Delivery de segunda a sábado. R. Benedito Américo de Oliveira, 202 – Vila Yara.">
   <meta name="keywords" content="restaurante osasco, buffet por quilo osasco, almoço osasco, delivery osasco, vila yara restaurante, spaço gourmet">
-  <meta name="author" content="Pedro Oliveira Santos | dabar technology">
+  <meta name="author" content="Pedrp Olivera Santos | Dabar Technology">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://spacogourmetrestaurante.com.br/">
 
-  <!-- ═══ OPEN GRAPH (Facebook / WhatsApp / LinkedIn) ═══ -->
-  <meta property="og:type" content="restaurant">
-  <meta property="og:site_name" content="Spaço Gourmet Restaurante">
-  <meta property="og:title" content="Spaço Gourmet – Buffet por Quilo em Osasco">
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type"        content="restaurant">
+  <meta property="og:site_name"   content="Spaço Gourmet Restaurante">
+  <meta property="og:title"       content="Spaço Gourmet – Buffet por Quilo em Osasco">
   <meta property="og:description" content="Ingredientes de primeira, feito com muito carinho. Buffet completo com saladas, massas, carnes e muito mais. Delivery de segunda a sábado.">
-  <meta property="og:url" content="https://spacogourmet.com.br/">
-  <meta property="og:image" content="https://spacogourmet.com.br/assets/img/og-image.jpg">
-  <meta property="og:image:width" content="1200">
+  <meta property="og:url"         content="https://spacogourmet.com.br/">
+  <meta property="og:image"       content="https://spacogourmet.com.br/assets/img/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Buffet do Spaço Gourmet Restaurante em Osasco">
-  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image:alt"   content="Buffet do Spaço Gourmet Restaurante em Osasco">
+  <meta property="og:locale"      content="pt_BR">
 
   <!-- ═══ TWITTER CARD ═══ -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Spaço Gourmet – Buffet por Quilo em Osasco">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Spaço Gourmet – Buffet por Quilo em Osasco">
   <meta name="twitter:description" content="Ingredientes de primeira, feito com muito carinho. Delivery de segunda a sábado.">
-  <meta name="twitter:image" content="https://spacogourmet.com.br/assets/img/og-image.jpg">
+  <meta name="twitter:image"       content="https://spacogourmet.com.br/assets/img/og-image.jpg">
 
-  <!-- ═══ SCHEMA.ORG – LocalBusiness / Restaurant ═══ -->
+  <!-- ═══ SCHEMA.ORG ═══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,13 +61,6 @@
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "11:00",
         "closes": "15:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "11:00",
-        "closes": "15:00",
-        "description": "Delivery disponível"
       }
     ],
     "sameAs": [
@@ -75,8 +69,9 @@
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "3"
+      "ratingValue": "4.9",
+      "reviewCount": "352",
+      "bestRating": "5"
     }
   }
   </script>
@@ -97,406 +92,506 @@
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════
-     NAVEGAÇÃO PRINCIPAL
-════════════════════════════════════════════ -->
-<header>
-  <nav id="nav" role="navigation" aria-label="Navegação principal">
-    <a href="#inicio" class="nav-logo" aria-label="Spaço Gourmet Restaurante – página inicial">
-      <img src="assets/img/logo.webp" alt="Spaço Gourmet Restaurante" width="160" height="32" loading="eager">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+  <!-- ═══════════════════════════════════
+       HEADER / NAV
+  ════════════════════════════════════ -->
+  <header class="site-header" id="topo">
+    <a class="site-header__logo" href="#topo" aria-label="Spaço Gourmet – página inicial">
+      <img
+        src="assets/img/logo.webp"
+        alt="Spaço Gourmet Restaurante"
+        width="160"
+        height="32"
+        loading="eager"
+      >
     </a>
 
-    <!-- Menu mobile acessível -->
-    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menu de navegação">
-      <span></span><span></span><span></span>
-    </button>
+    <nav aria-label="Navegação principal">
+      <button
+        class="nav-toggle"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        aria-label="Abrir menu de navegação"
+      >
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
 
-    <ul class="nav-links" id="nav-menu" role="list">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#cardapio">Cardápio</a></li>
-      <li><a href="#avaliacoes">Avaliações</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li>
-        <a href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
-           class="nav-cta"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Pedir delivery online – abre em nova aba">
-          Pedir Delivery
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<!-- ═══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
-<main>
-  <section class="hero" id="inicio" aria-labelledby="hero-heading">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-lines" aria-hidden="true"></div>
-    <div class="hero-vignette" aria-hidden="true"></div>
-
-    <div class="hero-content">
-      <p class="hero-divider" aria-label="Localização: Vila Yara, Osasco SP">
-        <span aria-hidden="true"></span>
-        Vila Yara · Osasco, SP
-        <span aria-hidden="true"></span>
-      </p>
-
-      <h1 id="hero-heading">
-        A qualidade<br>que você <em>merece.</em>
-      </h1>
-
-      <p class="lead">
-        Ingredientes de primeira, feito com muito carinho. Buffet completo com saladas, massas, carnes e muito mais — todo dia.
-      </p>
-
-      <div class="hero-actions">
-        <a href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
-           class="btn-gold"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Fazer pedido de delivery online">
-          Pedir Delivery
-        </a>
-        <a href="#cardapio" class="btn-ghost">Ver Cardápio</a>
-      </div>
-
-      <ul class="hero-stats" aria-label="Informações rápidas">
-        <li class="stat-item">
-          <span class="stat-num" aria-label="De quarenta a sessenta reais por pessoa">R$40–60</span>
-          <span class="stat-label">por pessoa</span>
-        </li>
-        <li class="stat-item">
-          <span class="stat-num">Seg–Sáb</span>
-          <span class="stat-label">almoço e delivery</span>
-        </li>
-        <li class="stat-item">
-          <span class="stat-num">
-            <time datetime="11:00">11h00</time>
-          </span>
-          <span class="stat-label">abertura</span>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <a
+            href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Pedir delivery online – abre em nova aba"
+          >Pedir Delivery</a>
         </li>
       </ul>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <!-- ═══════════════════════════════════════════
-       SOBRE
-  ════════════════════════════════════════════ -->
-  <section class="about" id="sobre" aria-labelledby="sobre-heading">
-    <div>
-      <p class="label-tag" aria-hidden="true">Nossa história</p>
-      <h2 id="sobre-heading">Feito com <em>carinho,</em><br>servido com orgulho</h2>
-      <p>Somos um restaurante por quilo que acredita que uma boa refeição vai além do prato. É sobre o cuidado com cada ingrediente, o aconchego do espaço e o sorriso na mesa.</p>
-      <p>Trabalhamos apenas com ingredientes de primeira qualidade, preparados frescos diariamente para garantir que cada visita seja uma experiência que você vai querer repetir.</p>
+  <main id="conteudo">
 
-      <ol class="about-features" aria-label="Diferenciais do restaurante">
-        <li class="af-item reveal">
-          <span class="af-num" aria-hidden="true">01</span>
-          <div class="af-text">
-            <h3>Ingredientes selecionados</h3>
-            <p>Apenas matéria-prima de primeira, escolhida com critério todos os dias.</p>
-          </div>
-        </li>
-        <li class="af-item reveal">
-          <span class="af-num" aria-hidden="true">02</span>
-          <div class="af-text">
-            <h3>Espaço tranquilo</h3>
-            <p>Ambiente acolhedor com mesas externas para um almoço sem pressa.</p>
-          </div>
-        </li>
-        <li class="af-item reveal">
-          <span class="af-num" aria-hidden="true">03</span>
-          <div class="af-text">
-            <h3>Encomendas especiais</h3>
-            <p>Atendemos eventos, confraternizações e pedidos sob medida.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
+    <!-- ═══════════════════════════════════
+         HERO — centralizado com foto de fundo
+         (layout do index.html dele,
+          foto de ambiente como no meu)
+    ════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
 
-    <div class="about-right" aria-label="Destaques do buffet">
-      <article class="about-card reveal">
-        <span class="card-icon" role="img" aria-label="Salada">🥗</span>
-        <h3>Buffet à Vontade</h3>
-        <p>Saladas frescas, massas variadas, carnes nobres e acompanhamentos renovados diariamente.</p>
-      </article>
-      <article class="about-card reveal">
-        <span class="card-icon" role="img" aria-label="Folha">🌿</span>
-        <h3>Opções Vegetarianas</h3>
-        <p>Grande variedade de legumes, verduras e preparações sem carne para todos os gostos.</p>
-      </article>
-      <article class="about-card reveal">
-        <span class="card-icon" role="img" aria-label="Moto de entrega">🛵</span>
-        <h3>Delivery de Seg a Sáb</h3>
-        <p>Leve o sabor do Spaço Gourmet até a sua casa ou escritório com praticidade.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CARDÁPIO
-  ════════════════════════════════════════════ -->
-  <section class="menu" id="cardapio" aria-labelledby="cardapio-heading">
-    <header class="menu-header">
-      <p class="label-tag" aria-hidden="true">Nosso cardápio</p>
-      <h2 id="cardapio-heading">Um buffet completo, <em>todo dia</em></h2>
-    </header>
-
-    <ul class="menu-grid" aria-label="Categorias do buffet">
-      <li class="menu-item reveal">
-        <span class="mi-icon" role="img" aria-label="Salada">🥗</span>
-        <h3>Saladas</h3>
-        <p>Folhas variadas, legumes frescos e frios selecionados</p>
-      </li>
-      <li class="menu-item reveal">
-        <span class="mi-icon" role="img" aria-label="Prato de massa">🍝</span>
-        <h3>Massas</h3>
-        <p>Diversas opções de massas artesanais preparadas no dia</p>
-      </li>
-      <li class="menu-item reveal">
-        <span class="mi-icon" role="img" aria-label="Carne">🥩</span>
-        <h3>Carnes</h3>
-        <p>Grande variedade de carnes grelhadas e assadas</p>
-      </li>
-      <li class="menu-item reveal">
-        <span class="mi-icon" role="img" aria-label="Prato com acompanhamentos">🍛</span>
-        <h3>Acompanhamentos</h3>
-        <p>Arroz, feijão, farofa, legumes e muito mais</p>
-      </li>
-    </ul>
-
-    <div class="menu-cta-row">
-      <div>
-        <p class="label-tag" style="margin-bottom:0.5rem;">Preço por pessoa</p>
-        <div class="price-display" aria-label="Preço: de quarenta a sessenta reais por pessoa">
-          <span class="currency" aria-hidden="true">R$</span>
-          <span class="amount">40–60</span>
-          <span class="suffix" aria-hidden="true">/ pessoa</span>
-        </div>
-        <p style="font-size:0.78rem;color:var(--silver-dim);margin-top:0.5rem;letter-spacing:0.05em;">Informado por clientes · Buffet à vontade</p>
+      <!-- Camadas de fundo -->
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__foto" aria-hidden="true">
+        <img
+          src="assets/img/hero.jpg"
+          alt=""
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
       </div>
-      <div style="display:flex;flex-direction:column;gap:0.8rem;align-items:flex-end;">
-        <a href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
-           class="btn-gold"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Pedir delivery agora – abre em nova aba">
-          Pedir Delivery Agora
-        </a>
-        <p style="font-size:0.75rem;color:var(--silver-dim);letter-spacing:0.05em;text-align:right;">Delivery disponível de segunda a sábado</p>
+      <div class="hero__vinheta" aria-hidden="true"></div>
+
+      <!-- Conteúdo centralizado -->
+      <div class="hero__conteudo">
+
+        <img
+          class="hero__logo"
+          src="assets/img/logo.webp"
+          alt="Spaço Gourmet Restaurante"
+          width="480"
+          height="96"
+        >
+
+        <p class="hero__local" aria-label="Localização: Vila Yara, Osasco SP">
+          <span aria-hidden="true"></span>
+          Vila Yara · Osasco, SP
+          <span aria-hidden="true"></span>
+        </p>
+
+        <h1 class="hero__titulo" id="hero-titulo">
+          A qualidade<br>que você <em>merece.</em>
+        </h1>
+
+        <p class="hero__descricao">
+          Ingredientes de primeira, feito com muito carinho. Buffet completo
+          com saladas, massas, carnes e muito mais — todo dia.
+        </p>
+
+        <div class="hero__acoes">
+          <a
+            href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
+            class="btn-gold"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fazer pedido de delivery online"
+          >Pedir Delivery</a>
+          <a href="#cardapio" class="btn-ghost">Ver Cardápio</a>
+        </div>
+
+        <ul class="hero__stats" aria-label="Informações rápidas">
+          <li class="stat-item">
+            <span class="stat-num" aria-label="De quarenta a sessenta reais por pessoa">R$40–60</span>
+            <span class="stat-label">por pessoa</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-num">Seg–Sáb</span>
+            <span class="stat-label">almoço e delivery</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-num"><time datetime="11:00">11h00</time></span>
+            <span class="stat-label">abertura</span>
+          </li>
+        </ul>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════
-       AVALIAÇÕES
-  ════════════════════════════════════════════ -->
-  <section class="reviews" id="avaliacoes" aria-labelledby="avaliacoes-heading">
-    <header class="reviews-header">
-      <p class="label-tag" aria-hidden="true">Avaliações Google</p>
-      <h2 id="avaliacoes-heading">O que dizem nossos <em>clientes</em></h2>
-    </header>
-
-    <div class="reviews-grid" role="list" aria-label="Avaliações de clientes">
-      <article class="review-card reveal" role="listitem" itemscope itemtype="https://schema.org/Review">
-        <div class="r-stars" aria-label="5 estrelas" role="img">
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-        </div>
-        <blockquote class="r-text" itemprop="reviewBody">
-          "Muita salada, ótimas opções de massas e muita variedade de carnes."
-        </blockquote>
-        <footer class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">— Cliente Google</span>
-        </footer>
-      </article>
-
-      <article class="review-card reveal" role="listitem" itemscope itemtype="https://schema.org/Review">
-        <div class="r-stars" aria-label="5 estrelas" role="img">
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-        </div>
-        <blockquote class="r-text" itemprop="reviewBody">
-          "Comida muito boa. Um lugar que vale a visita — qualidade no prato e variedade de sobra."
-        </blockquote>
-        <footer class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">— Cliente Google</span>
-        </footer>
-      </article>
-
-      <article class="review-card reveal" role="listitem" itemscope itemtype="https://schema.org/Review">
-        <div class="r-stars" aria-label="5 estrelas" role="img">
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-          <span class="r-star" aria-hidden="true"></span>
-        </div>
-        <blockquote class="r-text" itemprop="reviewBody">
-          "Restaurante animado, sempre cheio de gente — sinal de que a comida é boa de verdade."
-        </blockquote>
-        <footer class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">— Cliente Google</span>
-        </footer>
-      </article>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       CONTATO
-  ════════════════════════════════════════════ -->
-  <section class="info" id="contato" aria-labelledby="contato-heading">
-    <div>
-      <p class="label-tag" aria-hidden="true">Informações</p>
-      <h2 id="contato-heading" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:2.5rem;">
-        Venha nos <em style="font-style:italic;color:var(--gold);">visitar</em>
-      </h2>
-
-      <address style="font-style:normal;">
-        <div class="info-row">
-          <span class="ir-icon" aria-hidden="true">📍</span>
-          <div>
-            <p class="ir-label">Endereço</p>
-            <p class="ir-value">
-              R. Benedito Américo de Oliveira, 202<br>
-              Vila Yara · Osasco – SP · <span itemprop="postalCode">06028-080</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span class="ir-icon" aria-hidden="true">📞</span>
-          <div>
-            <p class="ir-label">Telefone</p>
-            <p class="ir-value">
-              <a href="tel:+551145560969" aria-label="Ligar para o restaurante: (11) 4556-0969">(11) 4556-0969</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span class="ir-icon" aria-hidden="true">🕐</span>
-          <div>
-            <p class="ir-label">Almoço presencial</p>
-            <p class="ir-value">
-              <time datetime="Mo-Fr 11:00">Segunda a Sexta · Abre às 11h00</time>
-            </p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span class="ir-icon" aria-hidden="true">🛵</span>
-          <div>
-            <p class="ir-label">Delivery</p>
-            <p class="ir-value">
-              <time datetime="Mo-Sa">Segunda a Sábado</time>
-            </p>
-          </div>
-        </div>
-
-        <div class="info-row">
-          <span class="ir-icon" aria-hidden="true">📲</span>
-          <div>
-            <p class="ir-label">Redes sociais</p>
-            <p class="ir-value">
-              <a href="https://www.instagram.com/spacogourmetrestaurante/"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Spaço Gourmet no Instagram – abre em nova aba">Instagram</a>
-              &nbsp;·&nbsp;
-              <a href="https://www.facebook.com/spacogourmetrestaurante/"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Spaço Gourmet no Facebook – abre em nova aba">Facebook</a>
-            </p>
-          </div>
-        </div>
-      </address>
+    <!-- ═══════════════════════════════════
+         FAIXA DE DESTAQUES
+    ════════════════════════════════════ -->
+    <div class="faixa" aria-label="Destaques do restaurante">
+      <ul class="faixa__lista" role="list">
+        <li class="faixa__item">Buffet à Vontade</li>
+        <li class="faixa__item">Opções Vegetarianas</li>
+        <li class="faixa__item">Mesas Externas</li>
+        <li class="faixa__item">Encomendas</li>
+        <li class="faixa__item">Delivery Seg–Sáb</li>
+        <li class="faixa__item">R$&nbsp;40–60 por pessoa</li>
+      </ul>
     </div>
 
-    <div class="map-block" aria-label="Localização no mapa">
-      <span class="map-pin" role="img" aria-label="Mapa">🗺️</span>
-      <h3>Spaço Gourmet</h3>
-      <p>R. Benedito Américo de Oliveira, 202<br>Vila Yara · Osasco – SP</p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Spa%C3%A7o+Gourmet+Osasco+R.+Benedito+Am%C3%A9rico+de+Oliveira+202"
-         target="_blank"
-         rel="noopener noreferrer"
-         aria-label="Ver Spaço Gourmet no Google Maps – abre em nova aba">
-        Ver no Google Maps
-      </a>
-    </div>
-  </section>
+    <!-- ═══════════════════════════════════
+         SOBRE
+         — features numeradas dele
+         — galeria dupla com foto minha
+    ════════════════════════════════════ -->
+    <section class="about" id="sobre" aria-labelledby="sobre-titulo">
 
-  <!-- ═══════════════════════════════════════════
-       CTA FINAL
-  ════════════════════════════════════════════ -->
-  <section class="cta-final" aria-labelledby="cta-heading">
-    <img class="logo-bottom"
-         src="assets/img/logo.webp"
-         alt=""
-         width="200"
-         height="40"
-         loading="lazy"
-         aria-hidden="true">
-    <p class="label-tag" style="justify-content:center;">Delivery disponível</p>
-    <h2 id="cta-heading">Está com fome?<br><em>A gente resolve.</em></h2>
-    <p>Peça agora pelo cardápio online — entregamos de segunda a sábado. Ou venha nos visitar no almoço de segunda a sexta.</p>
-    <a href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
-       class="btn-gold"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Fazer pedido de delivery online – abre em nova aba">
-      Fazer Pedido Online
+      <div class="about__texto">
+        <p class="label-tag" aria-hidden="true">Nossa história</p>
+        <h2 id="sobre-titulo">Feito com <em>carinho,</em><br>servido com orgulho</h2>
+
+        <p>Somos um restaurante por quilo que acredita que uma boa refeição vai além do prato. É sobre o cuidado com cada ingrediente, o aconchego do espaço e o sorriso na mesa.</p>
+        <p>Trabalhamos apenas com ingredientes de primeira qualidade, preparados frescos diariamente para garantir que cada visita seja uma experiência que você vai querer repetir.</p>
+
+        <ol class="about__features" aria-label="Diferenciais do restaurante">
+          <li class="af-item reveal">
+            <span class="af-num" aria-hidden="true">01</span>
+            <div class="af-text">
+              <h3>Ingredientes selecionados</h3>
+              <p>Apenas matéria-prima de primeira, escolhida com critério todos os dias.</p>
+            </div>
+          </li>
+          <li class="af-item reveal">
+            <span class="af-num" aria-hidden="true">02</span>
+            <div class="af-text">
+              <h3>Espaço tranquilo</h3>
+              <p>Ambiente acolhedor com mesas externas e jardim vertical para um almoço sem pressa.</p>
+            </div>
+          </li>
+          <li class="af-item reveal">
+            <span class="af-num" aria-hidden="true">03</span>
+            <div class="af-text">
+              <h3>Encomendas especiais</h3>
+              <p>Atendemos eventos, confraternizações e pedidos sob medida.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Galeria dupla (do meu) -->
+      <div class="about__galeria">
+        <img
+          class="about__foto-principal"
+          src="assets/img/sobre-principal.jpg"
+          alt="Buffet completo do Spaço Gourmet com variedade de pratos"
+          width="600"
+          height="750"
+          loading="lazy"
+        >
+        <img
+          class="about__foto-destaque"
+          src="assets/img/sobre-detalhe.jpg"
+          alt="Detalhe de prato servido no Spaço Gourmet"
+          width="320"
+          height="320"
+          loading="lazy"
+        >
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CARDÁPIO
+         — grid + cta-row com preço grande (dele)
+    ════════════════════════════════════ -->
+    <section class="menu" id="cardapio" aria-labelledby="cardapio-titulo">
+
+      <header class="menu__cabecalho">
+        <p class="label-tag" aria-hidden="true">Nosso cardápio</p>
+        <h2 id="cardapio-titulo">Um buffet completo, <em>todo dia</em></h2>
+      </header>
+
+      <ul class="menu__grid" role="list" aria-label="Categorias do buffet">
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Salada">🥗</span>
+          <h3>Saladas</h3>
+          <p>Folhas variadas, legumes frescos e frios selecionados</p>
+        </li>
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Massa">🍝</span>
+          <h3>Massas</h3>
+          <p>Diversas opções de massas artesanais preparadas no dia</p>
+        </li>
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Carne">🥩</span>
+          <h3>Carnes</h3>
+          <p>Grande variedade de carnes grelhadas e assadas</p>
+        </li>
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Legumes">🥦</span>
+          <h3>Vegetariano</h3>
+          <p>Legumes frescos e preparações sem carne com muito sabor</p>
+        </li>
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Acompanhamentos">🍚</span>
+          <h3>Acompanhamentos</h3>
+          <p>Arroz, feijão, farofa e muito mais</p>
+        </li>
+        <li class="menu-item reveal">
+          <span class="mi-icon" role="img" aria-label="Caixa">📦</span>
+          <h3>Encomendas</h3>
+          <p>Pedidos especiais para eventos e confraternizações</p>
+        </li>
+      </ul>
+
+      <div class="menu__cta-row">
+        <div>
+          <p class="label-tag">Preço por pessoa</p>
+          <div class="price-display" aria-label="Preço: de quarenta a sessenta reais por pessoa">
+            <span class="price-display__currency" aria-hidden="true">R$</span>
+            <span class="price-display__valor">40–60</span>
+            <span class="price-display__sufixo" aria-hidden="true">/ pessoa</span>
+          </div>
+          <p class="menu__preco-obs">Informado por clientes · Buffet à vontade</p>
+        </div>
+        <div class="menu__cta-acoes">
+          <a
+            href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
+            class="btn-gold"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Pedir delivery agora – abre em nova aba"
+          >Pedir Delivery Agora</a>
+          <p class="menu__cta-obs">Delivery disponível de segunda a sábado</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════
+         AVALIAÇÕES (dele — estrelas CSS)
+    ════════════════════════════════════ -->
+    <section class="reviews" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
+
+      <header class="reviews__cabecalho">
+        <p class="label-tag" aria-hidden="true">Avaliações Google</p>
+        <h2 id="avaliacoes-titulo">O que dizem nossos <em>clientes</em></h2>
+      </header>
+
+      <ul class="reviews__grid" role="list" aria-label="Avaliações de clientes">
+
+        <li class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="r-stars" role="img" aria-label="5 estrelas">
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+          </div>
+          <blockquote itemprop="reviewBody">
+            <p>"Muita salada, ótimas opções de massas e muita variedade de carnes."</p>
+          </blockquote>
+          <footer>
+            <cite class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Cliente · Google</span>
+            </cite>
+          </footer>
+        </li>
+
+        <li class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="r-stars" role="img" aria-label="5 estrelas">
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+          </div>
+          <blockquote itemprop="reviewBody">
+            <p>"Comida muito boa. Um lugar que vale a visita — qualidade no prato e variedade de sobra."</p>
+          </blockquote>
+          <footer>
+            <cite class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Cliente · Google</span>
+            </cite>
+          </footer>
+        </li>
+
+        <li class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="r-stars" role="img" aria-label="5 estrelas">
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+            <span class="r-star" aria-hidden="true"></span>
+          </div>
+          <blockquote itemprop="reviewBody">
+            <p>"Restaurante animado, sempre cheio de gente — sinal de que a comida é boa de verdade."</p>
+          </blockquote>
+          <footer>
+            <cite class="r-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Cliente · Google</span>
+            </cite>
+          </footer>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CONTATO
+         — info-rows dele
+         — foto real do espaço no lugar do mapa fictício
+    ════════════════════════════════════ -->
+    <section class="info" id="contato" aria-labelledby="contato-titulo">
+
+      <div class="info__dados">
+        <p class="label-tag" aria-hidden="true">Informações</p>
+        <h2 id="contato-titulo">Venha nos <em>visitar</em></h2>
+
+        <address>
+
+          <div class="info-row">
+            <span class="ir-icon" aria-hidden="true">📍</span>
+            <div>
+              <p class="ir-label">Endereço</p>
+              <p class="ir-value">
+                R. Benedito Américo de Oliveira, 202<br>
+                Vila Yara · Osasco – SP · 06028-080
+              </p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="ir-icon" aria-hidden="true">📞</span>
+            <div>
+              <p class="ir-label">Telefone</p>
+              <p class="ir-value">
+                <a href="tel:+551145560969" aria-label="Ligar: (11) 4556-0969">(11) 4556-0969</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="ir-icon" aria-hidden="true">🕐</span>
+            <div>
+              <p class="ir-label">Almoço presencial</p>
+              <p class="ir-value">
+                <time datetime="Mo-Fr 11:00">Segunda a Sexta · Abre às 11h00</time>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="ir-icon" aria-hidden="true">🛵</span>
+            <div>
+              <p class="ir-label">Delivery</p>
+              <p class="ir-value">
+                <time datetime="Mo-Sa">Segunda a Sábado</time>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="ir-icon" aria-hidden="true">📲</span>
+            <div>
+              <p class="ir-label">Redes sociais</p>
+              <p class="ir-value">
+                <a href="https://www.instagram.com/spacogourmetrestaurante/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram do Spaço Gourmet – abre em nova aba">Instagram</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.facebook.com/spacogourmetrestaurante/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook do Spaço Gourmet – abre em nova aba">Facebook</a>
+              </p>
+            </div>
+          </div>
+
+        </address>
+      </div>
+
+      <!-- Foto do espaço (do meu) + link p/ maps -->
+      <div class="info__foto">
+        <img
+          src="assets/img/espaco.jpg"
+          alt="Entrada do Spaço Gourmet com jardim vertical e placa iluminada"
+          width="700"
+          height="500"
+          loading="lazy"
+        >
+        <a
+          class="info__maps-link"
+          href="https://www.google.com/maps/search/?api=1&query=Spa%C3%A7o+Gourmet+Osasco+R.+Benedito+Am%C3%A9rico+de+Oliveira+202"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ver Spaço Gourmet no Google Maps – abre em nova aba"
+        >Ver no Google Maps →</a>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════
+         CTA FINAL (dele)
+    ════════════════════════════════════ -->
+    <section class="cta-final" aria-labelledby="cta-titulo">
+      <img
+        class="cta-final__logo"
+        src="assets/img/logo.webp"
+        alt=""
+        width="200"
+        height="40"
+        loading="lazy"
+        aria-hidden="true"
+      >
+      <p class="label-tag">Delivery disponível</p>
+      <h2 id="cta-titulo">Está com fome?<br><em>A gente resolve.</em></h2>
+      <p>Peça agora pelo cardápio online — entregamos de segunda a sábado. Ou venha nos visitar no almoço de segunda a sexta.</p>
+      <a
+        href="https://pedido.anota.ai/cart?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGNsaWVudCI6IjY3OTEwYTFlM2VjZjJmMDAxMDUzMmM5YiIsImlkcGFnZSI6IjY3NDljMWNjMTE3Y2YwMDAxOTgwY2Q4NSIsImlhdCI6MTczNzczNzMyNX0.fIODu4HVUvWl1i528f33wzNAoRnp4BIm-dpuX-pwweQ"
+        class="btn-gold"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fazer pedido de delivery online – abre em nova aba"
+      >Fazer Pedido Online</a>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="site-footer">
+    <a href="#topo" class="site-footer__logo" aria-label="Spaço Gourmet – voltar ao topo">
+      <img
+        src="assets/img/logo.webp"
+        alt="Spaço Gourmet Restaurante"
+        width="120"
+        height="24"
+        loading="lazy"
+      >
     </a>
-  </section>
-</main>
 
-<!-- ═══════════════════════════════════════════
-     RODAPÉ
-════════════════════════════════════════════ -->
-<footer role="contentinfo">
-  <a href="#inicio" class="footer-logo" aria-label="Spaço Gourmet – voltar ao topo">
-    <img src="assets/img/logo.webp" alt="Spaço Gourmet Restaurante" width="120" height="24" loading="lazy">
-  </a>
+    <nav aria-label="Links do rodapé">
+      <ul class="footer-links" role="list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <a href="https://www.instagram.com/spacogourmetrestaurante/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram – abre em nova aba">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/spacogourmetrestaurante/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Facebook – abre em nova aba">Facebook</a>
+        </li>
+      </ul>
+    </nav>
 
-  <nav aria-label="Links do rodapé">
-    <ul class="footer-links" role="list">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#cardapio">Cardápio</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li>
-        <a href="https://www.instagram.com/spacogourmetrestaurante/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Instagram do Spaço Gourmet – abre em nova aba">Instagram</a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/spacogourmetrestaurante/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Facebook do Spaço Gourmet – abre em nova aba">Facebook</a>
-      </li>
-    </ul>
-  </nav>
+    <small class="footer-copy">
+      © <time datetime="2025">2025</time> Spaço Gourmet · Osasco, SP
+    </small>
+  </footer>
 
-  <small class="footer-copy">
-    <span>© <time datetime="2025">2025</time> Spaço Gourmet · Osasco, SP</span>
-  </small>
-</footer>
+  <!-- ═══════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════ -->
+  <script src="assets/js/home.js" defer></script>
 
-<!-- ═══════════════════════════════════════════
-     SCRIPTS
-════════════════════════════════════════════ -->
-<script src="assets/js/home.js" defer></script>
 </body>
 </html>
