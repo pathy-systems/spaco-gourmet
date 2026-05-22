@@ -21,18 +21,18 @@ a {
 }
 
 :root {
-  --black:       #0A0A0A;
-  --black2:      #111111;
-  --black3:      #1A1A1A;
-  --off-white:   #F0EDE8;
-  --silver:      #C8C4BC;
-  --silver-dim:  #7A7570;
-  --gold:        #C9A96E;
-  --gold-dim:    #8A6F3E;
-  --terracota:   #B85C38;
+  --black: #0A0A0A;
+  --black2: #111111;
+  --black3: #1A1A1A;
+  --off-white: #F0EDE8;
+  --silver: #C8C4BC;
+  --silver-dim: #7A7570;
+  --gold: #C9A96E;
+  --gold-dim: #8A6F3E;
+  --terracota: #B85C38;
 
   --font-display: 'Cormorant Garamond', serif;
-  --font-body:    'Jost', sans-serif;
+  --font-body: 'Jost', sans-serif;
 }
 
 html {
@@ -268,7 +268,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: radial-gradient(ellipse 100% 80% at 50% 100%, rgba(10,10,10,.92) 0%, transparent 60%);
+  background: radial-gradient(ellipse 100% 80% at 50% 100%, rgba(10, 10, 10, .92) 0%, transparent 60%);
 }
 
 /* Conteúdo */
@@ -278,13 +278,7 @@ body {
   max-width: 800px;
 }
 
-.hero__logo {
-  display: block;
-  margin: 0 auto 3rem;
-  width: min(480px, 80vw);
-  opacity: 0;
-  animation: fadeDown 1.2s cubic-bezier(.16, 1, .3, 1) .2s forwards;
-}
+
 
 .hero__local {
   display: flex;
@@ -401,6 +395,7 @@ body {
   gap: 2.5rem;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .faixa__item {
@@ -443,7 +438,7 @@ body {
   inset-block: 0;
   inset-inline-start: 0;
   width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(201,169,110,.3), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(201, 169, 110, .3), transparent);
 }
 
 .about h2 {
@@ -460,7 +455,7 @@ body {
   color: var(--gold);
 }
 
-.about__texto > p {
+.about__texto>p {
   font-size: .95rem;
   line-height: 1.9;
   color: var(--silver-dim);
@@ -580,10 +575,63 @@ body {
 }
 
 .menu-item {
+  position: relative;
+  overflow: hidden;
   background: var(--black);
   padding: 2.5rem 2rem;
   text-align: center;
   transition: background .3s;
+}
+
+.menu-item svg {
+  color: var(--gold);
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 0;
+}
+
+.menu-item * {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-item:hover::before {
+  opacity: 0.25;
+  /* controla intensidade */
+}
+
+
+/* BACKGROUND IMAGES  */
+.menu-item.salada::before {
+  background-image: url('../img/salada.png');
+}
+
+.menu-item:nth-child(2)::before {
+  background-image: url('../img/macarrao2.png');
+}
+
+.menu-item:nth-child(3)::before {
+  background-image: url('../img/carne.png');
+}
+
+.menu-item:nth-child(4)::before {
+  background-image: url('../img/salmao.png');
+}
+
+.menu-item:nth-child(5)::before {
+  background-image: url('../img/acompanhamentos.jpg');
+}
+
+.menu-item:nth-child(6)::before {
+  background-image: url('../img/marmita.png');
 }
 
 .menu-item:hover {
@@ -816,6 +864,7 @@ address {
   margin-block-start: 3px;
   opacity: .7;
   user-select: none;
+  color: var(--gold-dim);
 }
 
 .ir-label {
@@ -833,9 +882,10 @@ address {
   font-weight: 300;
 }
 
-.ir-value a {
-  color: var(--gold);
-  transition: color .2s;
+.ir-value svg {
+  color: var(--silver);
+  margin-inline-end: .4rem;
+  vertical-align: middle;
 }
 
 .ir-value a:hover {
@@ -877,7 +927,6 @@ address {
 .cta-final {
   padding: 8rem 5rem;
   text-align: center;
-  background: var(--black2);
   position: relative;
   overflow: hidden;
 }
@@ -886,13 +935,19 @@ address {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(201,169,110,.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(201, 169, 110, .05) 0%, transparent 70%);
   pointer-events: none;
+  background-image: url('../img/marmita-na-mao.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: .15;
+
 }
 
-.cta-final > * {
+.cta-final>* {
   position: relative;
   z-index: 1;
+
 }
 
 .cta-final__logo {
@@ -925,7 +980,7 @@ address {
   color: var(--gold);
 }
 
-.cta-final > p {
+.cta-final>p {
   font-size: .95rem;
   color: var(--silver-dim);
   max-width: 480px;
@@ -999,29 +1054,58 @@ address {
   transform: translateY(0);
 }
 
-.reveal:nth-child(2) { transition-delay: .1s; }
-.reveal:nth-child(3) { transition-delay: .2s; }
-.reveal:nth-child(4) { transition-delay: .3s; }
-.reveal:nth-child(5) { transition-delay: .15s; }
-.reveal:nth-child(6) { transition-delay: .25s; }
+.reveal:nth-child(2) {
+  transition-delay: .1s;
+}
+
+.reveal:nth-child(3) {
+  transition-delay: .2s;
+}
+
+.reveal:nth-child(4) {
+  transition-delay: .3s;
+}
+
+.reveal:nth-child(5) {
+  transition-delay: .15s;
+}
+
+.reveal:nth-child(6) {
+  transition-delay: .25s;
+}
 
 /* ═══════════════════════════════════════════
    ANIMAÇÕES DO HERO
 ═══════════════════════════════════════════ */
 @keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ═══════════════════════════════════════════
    RESPONSIVO
 ═══════════════════════════════════════════ */
 @media (max-width: 1024px) {
+
   .about,
   .info {
     gap: 4rem;
@@ -1040,6 +1124,7 @@ address {
 }
 
 @media (max-width: 768px) {
+
   /* Header */
   .site-header {
     padding: 1rem 1.5rem;
@@ -1057,9 +1142,9 @@ address {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: rgba(10,10,10,.97);
+    background: rgba(10, 10, 10, .97);
     padding: 1rem 0;
-    border-block-end: 1px solid rgba(200,196,188,.1);
+    border-block-end: 1px solid rgba(200, 196, 188, .1);
   }
 
   .nav-links.open {
@@ -1090,7 +1175,7 @@ address {
 
   .stat-item {
     border-inline-end: none;
-    border-block-end: 1px solid rgba(200,196,188,.1);
+    border-block-end: 1px solid rgba(200, 196, 188, .1);
   }
 
   .stat-item:last-child {
