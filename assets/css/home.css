@@ -1259,13 +1259,58 @@ address {
 }
 
 @media (max-width: 480px) {
-  .menu__grid {
-    grid-template-columns: 1fr;
+
+  /* Hero */
+  .hero {
+    padding: 0 1rem;
   }
 
-  .hero__acoes {
+  .hero__local {
     flex-direction: column;
+    gap: .8rem;
+  }
+
+ .hero__titulo {
+    font-size: 2.5rem;
+  }
+
+  .hero__descricao {
+    font-size: .9rem;
+  }
+  
+.hero__acoes {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .hero__stats {
+    flex-direction: row;
+    margin: 1rem auto;
     width: 100%;
+  }
+
+  .stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .stat-num {
+    font-size: 0.9rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .faixa {
+    display: none;
+  } 
+
+  .menu__grid {
+    grid-template-columns: 1fr;
   }
 
   .btn-gold,
